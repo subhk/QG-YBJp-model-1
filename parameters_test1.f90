@@ -19,7 +19,7 @@ MODULE parameters
     !Special cases!
     !-------------!
 
-    integer, parameter :: fixed_flow = 1        !1: Leave the flox fixed during integration of YBJ, i.e. skip the psi-inversion steps
+    integer, parameter :: fixed_flow = 1        !1: Leave the flow fixed during integration of YBJ, i.e. skip the psi-inversion steps
     integer, parameter :: passive_scalar = 0    !1: Set dispersion and refraction to 0 and skip the LA -> A inversion. BR and BI become two (independent) passive scalars.
     integer, parameter :: ybj_plus = 1          !1: B is L+A and A is recovered from B like psi is recovered from q (exception of the 1/4 factor). 0: Regular YBJ equation (not recommended)  
     integer, parameter :: no_feedback=1         !1: q^w = 0 and flow is independent of waves. 0: feedback activated (requires smaller time step) 

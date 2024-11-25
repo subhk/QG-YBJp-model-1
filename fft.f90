@@ -66,8 +66,6 @@ MODULE fft
       END SUBROUTINE fft_r2c
 
 
-
-
     SUBROUTINE fft_c2r(kvar,rvar,nz)
 
         double precision :: rvar(n1d,n2d,nz)
